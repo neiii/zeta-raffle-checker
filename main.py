@@ -13,8 +13,8 @@ with open("eth.csv", newline='') as f:
 
 
 def make_tasks(session, wallets):
-  tasks = [session.get(f"https://mint-api.zeta-nft.io/?address={wallet}") for wallet in wallets]
-  return tasks 
+ 	tasks = [session.get(f"https://mint-api.zeta-nft.io/?address={wallet}") for wallet in wallets]
+ 	return tasks 
 
 def log_results(results): 
 	with open("results.csv", "w", newline="") as f:
